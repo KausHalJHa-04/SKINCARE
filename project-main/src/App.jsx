@@ -12,7 +12,7 @@ import LoadingScreen from './components/LoadScreen'
 
 const App = () => {
   return (
-    <>
+    <> 
       <LoadingScreen />
       <SkincareNavbar />
       <GlowNaturallyLandingPage />
