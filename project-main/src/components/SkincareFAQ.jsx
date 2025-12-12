@@ -70,9 +70,9 @@ const SkincareFAQ = () => {
                 {openIndex === idx && item.answer && (
                   <div className="faq-answer">{item.answer}</div>
                 )}
-              </div>
+              </div> 
             ))}
-          </div>
+          </div><br />
         </div>
       </div>
       <style>{`

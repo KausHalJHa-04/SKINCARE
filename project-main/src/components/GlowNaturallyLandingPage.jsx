@@ -61,6 +61,10 @@ const GlowNaturallyLandingPage = () => {
         //    display: flex;
          flex-wrap: wrap;
 
+          overflow-x: hidden;
+          padding: 20px;
+          display: flex;
+          flex-direction: column;
         }
         .gn-top-product {
           position: absolute;
@@ -113,11 +117,16 @@ const GlowNaturallyLandingPage = () => {
         .gn-headline {
           text-align: center;
           margin-top: 60px;
+          margin: 60px auto 0;
+          position: relative;
+          z-index: 2;
         }
         .gn-headline > div {
           font-weight: 700;
           font-size: 54px;
           line-height: 1.08;
+          font-size: clamp(2rem, 10vw, 5rem);
+          line-height: 1.1;
           color: #253229;
           letter-spacing: -2px;
         }
@@ -135,6 +144,8 @@ const GlowNaturallyLandingPage = () => {
           box-shadow: 0 8px 48px rgba(50,80,50,0.09);
           width: 420px;
           height: 420px;
+          width: clamp(280px, 35vw, 420px);
+          aspect-ratio: 1 / 1;
           background: #fff;
           display: flex;
           align-items: center;
@@ -163,6 +174,8 @@ const GlowNaturallyLandingPage = () => {
           color: #232A23;
           font-weight: 400;
           max-width: 310px;
+          font-weight: 500;
+          width: 90%;
           z-index: 5;
           height: 80px;
           width: 90%;
@@ -210,6 +223,43 @@ const GlowNaturallyLandingPage = () => {
             top: 70px;
           }
         }
+        @media (max-width: 1024px) {
+          .gn-root {
+            padding: 10px;
+          }
+          .gn-top-product img {
+            width: 100px;
+            height: 75px;
+          }
+          .gn-left-desc {
+            max-width: 200px;
+            top: 80px;
+          }
+          .gn-desc-text {
+            font-size: 14px;
+            margin-bottom: 24px;
+          }
+          .gn-shop-btn {
+            padding: 8px 20px;
+            font-size: 14px;
+          }
+          .gn-headline > div {
+            font-size: 32px;
+          }
+          .gn-img-card {
+            width: 250px;
+            height: 280px;
+          }
+          .gn-review-card {
+            padding: 6px 16px 6px 8px;
+            font-size: 13px;
+            height: 60px;
+          }
+          .gn-review-card img {
+            width: 28px;
+            height: 28px;
+          }
+        }
         @media (max-width: 800px) {
           .gn-skincare-bg {
             font-size: 60px;
@@ -235,9 +285,39 @@ const GlowNaturallyLandingPage = () => {
             top: 7vw;
           }
         }
+        @media (max-width: 768px) {
+          .gn-root {
+            flex-direction: column;
+            align-items: center;
+            padding: 20px 10px;
+          }
+          .gn-top-product {
+            position: static;
+            margin-bottom: 20px;
+          }
+          .gn-left-desc {
+            position: static;
+            max-width: 100%;
+            text-align: center;
+            margin-bottom: 20px;
+          }
+          .gn-headline {
+            margin-top: 20px;
+          }
+          .gn-center-img {
+            margin-top: 20px;
+          }
+          .gn-skincare-bg {
+            position: static;
+            font-size: 40px;
+            margin-top: 20px;
+            color: rgba(48, 59, 54, 0.3);
+          }
+        }
         @media (max-width: 480px) {
           .gn-root {
             min-height: 100vw;
+            padding: 10px;
           }
           .gn-headline {
             margin-top: 12vw;
@@ -250,6 +330,32 @@ const GlowNaturallyLandingPage = () => {
           }
           .gn-left-desc {
             top: 8vw;
+          }
+          .gn-top-product img {
+            width: 80px;
+            height: 60px;
+          }
+          .gn-desc-text {
+            font-size: 13px;
+          }
+          .gn-shop-btn {
+            padding: 6px 16px;
+            font-size: 13px;
+          }
+          .gn-headline > div {
+            font-size: 20px;
+          }
+          .gn-review-card {
+            font-size: 12px;
+            padding: 4px 12px 4px 6px;
+            height: 50px;
+          }
+          .gn-review-card img {
+            width: 24px;
+            height: 24px;
+          }
+          .gn-skincare-bg {
+            font-size: 30px;
           }
         }
       `}</style>

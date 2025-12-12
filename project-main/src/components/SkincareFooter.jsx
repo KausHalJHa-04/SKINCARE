@@ -144,6 +144,45 @@ const SkincareFooter = () => (
         pointer-events: none;
         font-size: 400px;
       }
+      @media (min-width: 1440px) {
+        .skincare-footer-root {
+          height: 700px;
+        }
+        .skincare-footer-bg-text {
+          font-size: 450px;
+          top: 300px;
+        }
+        .skincare-footer-title {
+          font-size: 4.5rem;
+        }
+        .skincare-footer-contact-label {
+          font-size: 4.6rem;
+        }
+        .skincare-footer-contact-link {
+          font-size: 3.5rem;
+        }
+        .skincare-footer-content {
+          max-width: 1400px;
+        }
+      }
+      @media (max-width: 1200px) {
+        .skincare-footer-root {
+          height: 500px;
+        }
+        .skincare-footer-bg-text {
+          font-size: 350px;
+          top: 200px;
+        }
+        .skincare-footer-title {
+          font-size: 3.5rem;
+        }
+        .skincare-footer-contact-label {
+          font-size: 3.5rem;
+        }
+        .skincare-footer-contact-link {
+          font-size: 2.5rem;
+        }
+      }
       @media (max-width: 900px) {
         .skincare-footer-content {
           flex-direction: column;
@@ -161,6 +200,43 @@ const SkincareFooter = () => (
         .skincare-footer-policies {
           margin-top: 28px;
           gap: 24px;
+        }
+        .skincare-footer-bg-text {
+          font-size: 300px;
+          top: 150px;
+        }
+      }
+      @media (max-width: 768px) {
+        .skincare-footer-root {
+          height: 400px;
+        }
+        .skincare-footer-content {
+          padding: 32px 3vw 0 3vw;
+          gap: 40px;
+        }
+        .skincare-footer-title {
+          font-size: 2.5rem;
+          margin-bottom: 30px;
+        }
+        .skincare-footer-contact-label {
+          font-size: 2.8rem;
+        }
+        .skincare-footer-contact-link {
+          font-size: 2rem;
+        }
+        .skincare-footer-socials {
+          flex-direction: column;
+          gap: 20px;
+          margin-top: 20px;
+        }
+        .skincare-footer-policies {
+          flex-direction: column;
+          gap: 16px;
+          margin-top: 20px;
+        }
+        .skincare-footer-bg-text {
+          font-size: 250px;
+          top: 100px;
         }
       }
       @media (max-width: 600px) {
@@ -189,6 +265,18 @@ const SkincareFooter = () => (
         }
         .skincare-footer-bg-text {
           font-size: 20vw;
+        }
+        .skincare-footer-root {
+          height: 300px;
+        }
+        .skincare-footer-title {
+          font-size: 1rem;
+        }
+        .skincare-footer-contact-label {
+          font-size: 1.5rem;
+        }
+        .skincare-footer-contact-link {
+          font-size: 1rem;
         }
       }
     `}</style>

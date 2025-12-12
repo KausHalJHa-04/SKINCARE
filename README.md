@@ -44,7 +44,7 @@ bash
 Copy
 Edit
 # Clone the repo
-git clone https://github.com/your-username/skincare-website.git
+git clone https://github.com/KausHalJHa-04/SKINCARE.git
 
 # Navigate into the project directory
 cd project-main
