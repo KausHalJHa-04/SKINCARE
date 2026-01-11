@@ -1,22 +1,20 @@
 import React from "react";
-import img1 from '../assets/img1.png';
-import img2 from '../assets/img2.png';
+import img1 from "../assets/img1.png";
+import img2 from "../assets/img2.png";
 
 const GlowNaturallyLandingPage = () => {
   return (
     <div className="gn-root">
       {/* Top right product image */}
       <div className="gn-top-product">
-        <img
-          src={img2}
-          alt="Plum Product"
-        />
+        <img src={img2} alt="Plum Product" />
       </div>
 
       {/* Left description and button */}
       <div className="gn-left-desc">
         <div className="gn-desc-text">
-          Transform your skincare routine with premium products that restore, protect, and enhance your natural glow every day.
+          Transform your skincare routine with premium products that restore,
+          protect, and enhance your natural glow every day.
         </div>
         <button className="gn-shop-btn">Shop Now</button>
       </div>
@@ -25,7 +23,8 @@ const GlowNaturallyLandingPage = () => {
       <div className="gn-headline">
         <div>
           GLOW <br />
-          NATUR-<br />
+          NATUR-
+          <br />
           ALLY
         </div>
       </div>
@@ -33,15 +32,9 @@ const GlowNaturallyLandingPage = () => {
       {/* Main image and review card */}
       <div className="gn-center-img">
         <div className="gn-img-card">
-          <img
-            src={img1}
-            alt="Natural skincare"
-          />
+          <img src={img1} alt="Natural skincare" />
           <div className="gn-review-card">
-            <img
-              src={img2}
-              alt="Cleansing icon"
-            />
+            <img src={img2} alt="Cleansing icon" />
             While giving you an invigorating cleansing experience.
           </div>
         </div>

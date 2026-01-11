@@ -46,10 +46,9 @@ const SkincareFooter = () => (
         height: 600px;
       }
       .skincare-footer-content {
-        display: flex;
-        flex-direction: row;
-        justify-content: space-between;
-        align-items: flex-start;
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        gap: 40px;
         max-width: 1200px;
         margin: 0 auto;
         width: 100%;
@@ -58,12 +57,9 @@ const SkincareFooter = () => (
         z-index: 2;
       }
       .skincare-footer-block {
-        flex: 1 1 0;
-        min-width: 220px;
         display: flex;
         flex-direction: column;
         justify-content: flex-start;
-        margin-bottom: 280px;
       }
       .skincare-footer-block-left {
         align-items: flex-start;
@@ -71,7 +67,6 @@ const SkincareFooter = () => (
       .skincare-footer-block-right {
         align-items: flex-start;
         text-align: right;
-        margin-left: 220px;
       }
       .skincare-footer-title {
         font-size: 4rem;
@@ -185,7 +180,7 @@ const SkincareFooter = () => (
       }
       @media (max-width: 900px) {
         .skincare-footer-content {
-          flex-direction: column;
+          grid-template-columns: 1fr;
           align-items: flex-start;
           padding: 42px 4vw 0 4vw;
           gap: 60px;
